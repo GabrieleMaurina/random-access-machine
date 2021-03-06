@@ -1,0 +1,6 @@
+jz 1 6
+inc 0
+inc 0
+dec 1
+jz 2 1
+dec 1
