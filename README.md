@@ -1,6 +1,8 @@
 # random-access-machine
 Random Access Machine implemented in python.
 
+RAM is an abstract machine that is turing complete and can compute any partial recursive function. Find out more here https://en.wikipedia.org/wiki/Random-access_machine
+
 ### Install
 
 Run inside terminal:
@@ -27,7 +29,13 @@ result = ram.compute(program, data)
 print(result) # 1
 ```
 
+### How it works
+
+A ram machine has infinite registers numbered from 0, 1, 2..., the input is loaded on register 1 before the execution starts, the output is taken from register 0 when the execution ends.
+
 ### Instructions:
+
+ A ram machine supports only 3 basic instructions:
 
 Increment register k by 1:
 
