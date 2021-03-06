@@ -5,16 +5,17 @@ Random Access Machine implemented in python.
 
 Run inside terminal:
 
-python -m pip install random-access-machine
+```python -m pip install random-access-machine```
 
 ### Usage
 
 To execute a ram source file:
 
-python -m ram \<ram source file\> \<integer input\>
+```python -m ram <ram source file> <integer input>```
 
 To import it in your script:
 
+```python
 from ram import RAM
 
 data = 4
@@ -23,30 +24,33 @@ program = 'inc 0'
 ram = RAM()
 result = ram.compute(program, data)
 
-print(result)
+print(result) # 1
+```
 
 ### Instructions:
 
 Increment register k by 1:
 
-inc k
+```inc k```
 
 Decrement register k by 1:
 
-dec k
+```dec k```
 
 Jump to instruction i if register k is zero:
 
-jz k i
+```jz k i```
 
 ### Example
 
-An example program to will double whatever input you give to the machine:
+An example program that will double whatever input you give to the machine:
 
+```
 jz 1 6
 inc 0
 inc 0
 dec 1
 jz 2 1
 dec 1
+```
 
