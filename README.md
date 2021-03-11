@@ -3,6 +3,8 @@ Random Access Machine implemented in python.
 
 RAM is an abstract machine that is turing complete and can compute any partial recursive function. Find out more here https://en.wikipedia.org/wiki/Random-access_machine
 
+Its more advanced brother is called While Machine and you can find its implementation here https://github.com/GabrieleMaurina/while-machine
+
 ### Install
 
 Run inside terminal:
@@ -62,3 +64,6 @@ jz 2 1
 dec 1
 ```
 
+### Compile While
+
+It is possible to compile a While program into a Ram program using the method compile_ram of the class WhileMachine. You can find an implementation of the while machine here https://github.com/GabrieleMaurina/while-machine
